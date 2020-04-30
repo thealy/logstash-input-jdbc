@@ -101,6 +101,7 @@ input {
     jdbc_driver_class => "com.mysql.jdbc.Driver"
     jdbc_connection_string => "jdbc:mysql://localhost:3306/mydb"
     jdbc_user => "mysql"
+    jdbc_password => "password"
     parameters => { "favorite_artist" => "Beethoven" }
     schedule => "* * * * *"
     statement => "SELECT * from songs where artist = :favorite_artist"
